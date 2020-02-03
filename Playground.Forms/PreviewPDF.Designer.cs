@@ -55,15 +55,15 @@
             this.previewBox.TabIndex = 1;
             this.previewBox.TabStop = false;
             // 
-            // Form1
+            // PreviewPDF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.previewBox);
             this.Controls.Add(this.btnRead);
-            this.Name = "Form1";
-            this.Text = "Playground";
+            this.Name = "PreviewPDF";
+            this.Text = "Preview PDF - Show in picturebox";
             ((System.ComponentModel.ISupportInitialize)(this.previewBox)).EndInit();
             this.ResumeLayout(false);
 
