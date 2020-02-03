@@ -1,6 +1,6 @@
 ﻿namespace Playground.Forms
 {
-    partial class Form1
+    partial class PreviewPDF
     {
         /// <summary>
         /// Required designer variable.
@@ -41,7 +41,7 @@
             this.btnRead.TabIndex = 0;
             this.btnRead.Text = "Open PDF";
             this.btnRead.UseVisualStyleBackColor = true;
-            this.btnRead.Click += new System.EventHandler(this.btnRead_Click);
+            this.btnRead.Click += new System.EventHandler(this.BtnRead_Click);
             // 
             // previewBox
             // 
