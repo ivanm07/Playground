@@ -34,7 +34,7 @@ namespace Playground.Forms
                 {
                     var sw = new Stopwatch();
                     sw.Start();
-                    previewBox.Image = Image.FromFile("giphy.gif");
+                    SetLoading(true);
                     Task.Run(async () =>
                     {
                         MagickReadSettings settings = new MagickReadSettings
@@ -65,9 +65,27 @@ namespace Playground.Forms
                         }
                     }).ContinueWith(new Action<Task>((t) =>
                     {
+                        SetLoading(false);
                         Console.WriteLine(sw.Elapsed);
                     }));
                 }
+            }
+        }
+        private void SetLoading(bool displayLoader)
+        {
+            if (displayLoader)
+            {
+                this.Invoke((MethodInvoker)delegate
+                {
+                    this.Cursor = Cursors.WaitCursor;
+                });
+            }
+            else
+            {
+                this.Invoke((MethodInvoker)delegate
+                {
+                    this.Cursor = Cursors.Default;
+                });
             }
         }
     }

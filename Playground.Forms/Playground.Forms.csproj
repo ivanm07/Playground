@@ -96,9 +96,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="giphy.gif">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="gs\gsdll64.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
