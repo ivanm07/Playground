@@ -45,6 +45,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
@@ -58,6 +59,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FolderCreator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FolderCreator.Designer.cs">
+      <DependentUpon>FolderCreator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordHash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PasswordHash.Designer.cs">
+      <DependentUpon>PasswordHash.cs</DependentUpon>
+    </Compile>
     <Compile Include="PreviewPDF.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +79,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FolderCreator.resx">
+      <DependentUpon>FolderCreator.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PreviewPDF.resx">
       <DependentUpon>PreviewPDF.cs</DependentUpon>
     </EmbeddedResource>

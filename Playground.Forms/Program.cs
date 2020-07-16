@@ -16,7 +16,7 @@ namespace Playground.Forms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PreviewPDF());
+            Application.Run(new FolderCreator());
         }
     }
 }
