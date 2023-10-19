@@ -57,10 +57,7 @@ namespace Playground.Forms
                                 //    }
                                 //}
                                 var image = images.AppendHorizontally();
-                                using (var stream = new MemoryStream())
-                                {
-                                    previewBox.Image = image.ToBitmap();
-                                }
+                                previewBox.Image = new Bitmap(new MemoryStream(image.ToByteArray()));
                             }
                         }
                     }).ContinueWith(new Action<Task>((t) =>
